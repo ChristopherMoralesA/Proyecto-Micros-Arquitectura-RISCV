@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.3 (win64) Build 3173277 Wed Apr  7 05:07:49 MDT 2021
-| Date         : Tue Jun  8 21:45:54 2021
+| Date         : Wed Jun  9 13:35:53 2021
 | Host         : DESKTOP-NELKSFF running 64-bit major release  (build 9200)
 | Command      : report_utilization -file RISCV_Uniciclo_Control_Unit_0_0_utilization_synth.rpt -pb RISCV_Uniciclo_Control_Unit_0_0_utilization_synth.pb
 | Design       : RISCV_Uniciclo_Control_Unit_0_0
@@ -34,8 +34,8 @@ Table of Contents
 | Registers               |   16 |     0 |          0 |   1450000 | <0.01 |
 |   Register as Flip Flop |    0 |     0 |          0 |   1450000 |  0.00 |
 |   Register as Latch     |   16 |     0 |          0 |   1450000 | <0.01 |
-| CLB LUTs*               |   38 |     0 |          0 |    725000 | <0.01 |
-|   LUT as Logic          |   38 |     0 |          0 |    725000 | <0.01 |
+| CLB LUTs*               |   37 |     0 |          0 |    725000 | <0.01 |
+|   LUT as Logic          |   37 |     0 |          0 |    725000 | <0.01 |
 |   LUT as Memory         |    0 |     0 |          0 |    449920 |  0.00 |
 | LOOKAHEAD8              |    0 |     0 |          0 |    112480 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
@@ -174,9 +174,9 @@ Table of Contents
 +----------+------+---------------------+
 | LUT6     |   17 |                 CLB |
 | LDCE     |   16 |            Register |
-| LUT5     |   13 |                 CLB |
+| LUT5     |   14 |                 CLB |
 | LUT3     |   11 |                 CLB |
-| LUT2     |    6 |                 CLB |
+| LUT2     |    4 |                 CLB |
 | LUT4     |    3 |                 CLB |
 | LUT1     |    1 |                 CLB |
 +----------+------+---------------------+

@@ -58,7 +58,7 @@ always@(*)
                             //ANDI
                             3'b111 : CALU = 3'b001;
                             //XORI
-                            3'b110 : CALU = 3'b010;
+                            3'b100 : CALU = 3'b010;
                             //SLLI
                             3'b001 : CALU = 3'b011;
                             //SRAI

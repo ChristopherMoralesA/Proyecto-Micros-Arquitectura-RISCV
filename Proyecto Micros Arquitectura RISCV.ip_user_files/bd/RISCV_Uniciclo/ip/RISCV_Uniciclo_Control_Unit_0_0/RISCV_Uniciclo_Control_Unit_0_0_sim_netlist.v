@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.3 (win64) Build 3173277 Wed Apr  7 05:07:49 MDT 2021
-// Date        : Tue Jun  8 21:45:54 2021
+// Date        : Wed Jun  9 13:35:53 2021
 // Host        : DESKTOP-NELKSFF running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {c:/Users/chris_qwzwysn/Proyecto Micros Arquitectura
 //               RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura
@@ -130,7 +130,6 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
   wire \CALU_reg[1]_i_3_n_0 ;
   wire \CALU_reg[1]_i_4_n_0 ;
   wire \CALU_reg[1]_i_5_n_0 ;
-  wire \CALU_reg[1]_i_6_n_0 ;
   wire \CALU_reg[2]_i_1_n_0 ;
   wire \CALU_reg[2]_i_2_n_0 ;
   wire \CALU_reg[2]_i_3_n_0 ;
@@ -197,7 +196,7 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .I1(OP_CODE[3]),
         .I2(RST),
         .I3(OS_reg_i_3_n_0),
-        .I4(\CALU_reg[2]_i_4_n_0 ),
+        .I4(\CALU_reg[2]_i_7_n_0 ),
         .O(ALUS1_reg_i_2_n_0));
   (* XILINX_LEGACY_PRIM = "LDC" *) 
   LDCE #(
@@ -214,7 +213,7 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
        (.I0(CDM_reg_i_6_n_0),
         .I1(CDM_reg_i_7_n_0),
         .O(ALUS2_reg_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h57575557)) 
     ALUS2_reg_i_2
@@ -256,11 +255,11 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .I1(FUNCT_3[2]),
         .I2(FUNCT_3[1]),
         .O(BS_reg_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
     .INIT(4'h2)) 
     BS_reg_i_2
-       (.I0(\CALU_reg[2]_i_4_n_0 ),
+       (.I0(\CALU_reg[2]_i_7_n_0 ),
         .I1(OP_CODE[2]),
         .O(BS_reg_i_2_n_0));
   (* XILINX_LEGACY_PRIM = "LDC" *) 
@@ -272,7 +271,7 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .G(\CALU_reg[2]_i_2_n_0 ),
         .GE(1'b1),
         .Q(CALU[0]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
     .INIT(32'hFFFAFEFA)) 
     \CALU_reg[0]_i_1 
@@ -283,14 +282,14 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .I4(OP_CODE[4]),
         .O(\CALU_reg[0]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hAAAAAAAAFEAAAAAA)) 
+    .INIT(64'hAAEAAAEAAAEAAAAA)) 
     \CALU_reg[0]_i_2 
        (.I0(\CALU_reg[0]_i_4_n_0 ),
-        .I1(FUNCT_3[1]),
-        .I2(FUNCT_3[2]),
-        .I3(OP_CODE[5]),
-        .I4(OP_CODE[4]),
-        .I5(OS_reg_i_3_n_0),
+        .I1(OP_CODE[5]),
+        .I2(OP_CODE[4]),
+        .I3(OS_reg_i_3_n_0),
+        .I4(FUNCT_3[1]),
+        .I5(FUNCT_3[2]),
         .O(\CALU_reg[0]_i_2_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
@@ -327,14 +326,14 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .I2(OP_CODE[5]),
         .I3(OP_CODE[4]),
         .I4(OS_reg_i_3_n_0),
-        .I5(\CALU_reg[2]_i_4_n_0 ),
+        .I5(\CALU_reg[2]_i_7_n_0 ),
         .O(\CALU_reg[1]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEEEEEEEEEEEEEEFE)) 
     \CALU_reg[1]_i_2 
        (.I0(\CALU_reg[2]_i_3_n_0 ),
         .I1(\CALU_reg[1]_i_3_n_0 ),
-        .I2(\CALU_reg[1]_i_4_n_0 ),
+        .I2(\CALU_reg[2]_i_5_n_0 ),
         .I3(FUNCT_3[2]),
         .I4(FUNCT_3[1]),
         .I5(FUNCT_3[0]),
@@ -343,37 +342,29 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
     .INIT(64'h00000000004000FF)) 
     \CALU_reg[1]_i_3 
        (.I0(OP_CODE[6]),
-        .I1(\CALU_reg[1]_i_5_n_0 ),
-        .I2(\CALU_reg[1]_i_6_n_0 ),
+        .I1(\CALU_reg[1]_i_4_n_0 ),
+        .I2(\CALU_reg[1]_i_5_n_0 ),
         .I3(CDM_reg_i_4_n_0),
         .I4(ALUS2_reg_i_3_n_0),
         .I5(OP_CODE[2]),
         .O(\CALU_reg[1]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \CALU_reg[1]_i_4 
-       (.I0(OP_CODE[5]),
-        .I1(OP_CODE[4]),
-        .I2(OS_reg_i_3_n_0),
-        .O(\CALU_reg[1]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'h0010000000000000)) 
-    \CALU_reg[1]_i_5 
+    \CALU_reg[1]_i_4 
        (.I0(FUNCT_7[3]),
         .I1(FUNCT_7[4]),
         .I2(FUNCT_7[5]),
         .I3(FUNCT_7[6]),
         .I4(OP_CODE[5]),
         .I5(OP_CODE[4]),
-        .O(\CALU_reg[1]_i_5_n_0 ));
+        .O(\CALU_reg[1]_i_4_n_0 ));
   LUT3 #(
     .INIT(8'h01)) 
-    \CALU_reg[1]_i_6 
+    \CALU_reg[1]_i_5 
        (.I0(FUNCT_7[2]),
         .I1(FUNCT_7[1]),
         .I2(FUNCT_7[0]),
-        .O(\CALU_reg[1]_i_6_n_0 ));
+        .O(\CALU_reg[1]_i_5_n_0 ));
   (* XILINX_LEGACY_PRIM = "LDC" *) 
   LDCE #(
     .INIT(1'b0)) 
@@ -383,25 +374,25 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .G(\CALU_reg[2]_i_2_n_0 ),
         .GE(1'b1),
         .Q(CALU[2]));
-  LUT6 #(
-    .INIT(64'hAFEEAFAAAFAFAFAA)) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'hFFFFFF40)) 
     \CALU_reg[2]_i_1 
-       (.I0(\CALU_reg[2]_i_4_n_0 ),
-        .I1(\CALU_reg[2]_i_5_n_0 ),
-        .I2(\CALU_reg[2]_i_6_n_0 ),
-        .I3(OS_reg_i_3_n_0),
-        .I4(OP_CODE[4]),
-        .I5(OP_CODE[5]),
+       (.I0(FUNCT_7[0]),
+        .I1(\CALU_reg[2]_i_4_n_0 ),
+        .I2(\CALU_reg[2]_i_5_n_0 ),
+        .I3(\CALU_reg[2]_i_6_n_0 ),
+        .I4(\CALU_reg[2]_i_7_n_0 ),
         .O(\CALU_reg[2]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFF00FF00B9)) 
+    .INIT(64'hFFFFFFFF00FF008F)) 
     \CALU_reg[2]_i_2 
        (.I0(FUNCT_3[2]),
-        .I1(FUNCT_3[1]),
-        .I2(FUNCT_3[0]),
+        .I1(FUNCT_3[0]),
+        .I2(FUNCT_3[1]),
         .I3(OS_reg_i_3_n_0),
-        .I4(\CALU_reg[2]_i_7_n_0 ),
-        .I5(\CALU_reg[2]_i_4_n_0 ),
+        .I4(\CALU_reg[2]_i_8_n_0 ),
+        .I5(\CALU_reg[2]_i_7_n_0 ),
         .O(\CALU_reg[2]_i_2_n_0 ));
   LUT3 #(
     .INIT(8'hF4)) 
@@ -411,43 +402,49 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .I2(RST),
         .O(\CALU_reg[2]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'h0020000000000000)) 
+    .INIT(64'h0000000100000000)) 
     \CALU_reg[2]_i_4 
+       (.I0(FUNCT_7[3]),
+        .I1(FUNCT_7[4]),
+        .I2(FUNCT_7[1]),
+        .I3(FUNCT_7[2]),
+        .I4(FUNCT_7[6]),
+        .I5(FUNCT_7[5]),
+        .O(\CALU_reg[2]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'h08)) 
+    \CALU_reg[2]_i_5 
+       (.I0(OP_CODE[5]),
+        .I1(OP_CODE[4]),
+        .I2(OS_reg_i_3_n_0),
+        .O(\CALU_reg[2]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h4040404000400000)) 
+    \CALU_reg[2]_i_6 
+       (.I0(FUNCT_3[1]),
+        .I1(FUNCT_3[2]),
+        .I2(FUNCT_3[0]),
+        .I3(OP_CODE[5]),
+        .I4(OP_CODE[4]),
+        .I5(OS_reg_i_3_n_0),
+        .O(\CALU_reg[2]_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'h0020000000000000)) 
+    \CALU_reg[2]_i_7 
        (.I0(OP_CODE[6]),
         .I1(OP_CODE[4]),
         .I2(OP_CODE[5]),
         .I3(OP_CODE[3]),
         .I4(OP_CODE[0]),
         .I5(OP_CODE[1]),
-        .O(\CALU_reg[2]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000002)) 
-    \CALU_reg[2]_i_5 
-       (.I0(\CALU_reg[2]_i_8_n_0 ),
-        .I1(FUNCT_7[2]),
-        .I2(FUNCT_7[1]),
-        .I3(FUNCT_7[4]),
-        .I4(FUNCT_7[3]),
-        .I5(FUNCT_7[0]),
-        .O(\CALU_reg[2]_i_5_n_0 ));
+        .O(\CALU_reg[2]_i_7_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'hB)) 
-    \CALU_reg[2]_i_6 
-       (.I0(FUNCT_3[1]),
-        .I1(FUNCT_3[2]),
-        .O(\CALU_reg[2]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT2 #(
-    .INIT(4'hB)) 
-    \CALU_reg[2]_i_7 
+    \CALU_reg[2]_i_8 
        (.I0(OP_CODE[5]),
         .I1(OP_CODE[4]),
-        .O(\CALU_reg[2]_i_7_n_0 ));
-  LUT2 #(
-    .INIT(4'h2)) 
-    \CALU_reg[2]_i_8 
-       (.I0(FUNCT_7[5]),
-        .I1(FUNCT_7[6]),
         .O(\CALU_reg[2]_i_8_n_0 ));
   (* XILINX_LEGACY_PRIM = "LDC" *) 
   LDCE #(
@@ -587,7 +584,7 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .G(\CEU_reg[2]_i_2_n_0 ),
         .GE(1'b1),
         .Q(CEU[2]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h0009)) 
     \CEU_reg[2]_i_1 
@@ -629,7 +626,7 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
     CRF_reg_i_2
        (.I0(CRF_reg_i_3_n_0),
         .I1(OS_reg_i_3_n_0),
-        .I2(\CALU_reg[2]_i_4_n_0 ),
+        .I2(\CALU_reg[2]_i_7_n_0 ),
         .I3(\DWS_reg[0]_i_1_n_0 ),
         .O(CRF_reg_i_2_n_0));
   LUT6 #(
@@ -758,7 +755,6 @@ module RISCV_Uniciclo_Control_Unit_0_0_Control_Unit
         .G(\PCS_reg[1]_i_1_n_0 ),
         .GE(1'b1),
         .Q(PCS[1]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
     .INIT(32'hDDDFDDDD)) 
     \PCS_reg[1]_i_1 

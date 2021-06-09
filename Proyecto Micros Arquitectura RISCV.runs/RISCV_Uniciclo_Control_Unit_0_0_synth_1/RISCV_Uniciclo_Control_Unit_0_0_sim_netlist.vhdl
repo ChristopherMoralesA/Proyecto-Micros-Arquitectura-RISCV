@@ -1,7 +1,7 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.3 (win64) Build 3173277 Wed Apr  7 05:07:49 MDT 2021
--- Date        : Tue Jun  8 21:45:53 2021
+-- Date        : Wed Jun  9 13:35:52 2021
 -- Host        : DESKTOP-NELKSFF running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ RISCV_Uniciclo_Control_Unit_0_0_sim_netlist.vhdl
@@ -51,7 +51,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Control_Unit
   signal \CALU_reg[1]_i_3_n_0\ : STD_LOGIC;
   signal \CALU_reg[1]_i_4_n_0\ : STD_LOGIC;
   signal \CALU_reg[1]_i_5_n_0\ : STD_LOGIC;
-  signal \CALU_reg[1]_i_6_n_0\ : STD_LOGIC;
   signal \CALU_reg[2]_i_1_n_0\ : STD_LOGIC;
   signal \CALU_reg[2]_i_2_n_0\ : STD_LOGIC;
   signal \CALU_reg[2]_i_3_n_0\ : STD_LOGIC;
@@ -90,19 +89,20 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Control_Unit
   attribute SOFT_HLUTNM of ALUS1_reg_i_2 : label is "soft_lutpair7";
   attribute XILINX_LEGACY_PRIM : string;
   attribute XILINX_LEGACY_PRIM of ALUS2_reg : label is "LDC";
-  attribute SOFT_HLUTNM of ALUS2_reg_i_2 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of ALUS2_reg_i_2 : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of ALUS2_reg_i_3 : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of ALUS2_reg_i_4 : label is "soft_lutpair11";
   attribute XILINX_LEGACY_PRIM of BS_reg : label is "LDC";
   attribute SOFT_HLUTNM of BS_reg_i_1 : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of BS_reg_i_2 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of BS_reg_i_2 : label is "soft_lutpair2";
   attribute XILINX_LEGACY_PRIM of \CALU_reg[0]\ : label is "LDC";
-  attribute SOFT_HLUTNM of \CALU_reg[0]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \CALU_reg[0]_i_1\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \CALU_reg[0]_i_3\ : label is "soft_lutpair12";
   attribute XILINX_LEGACY_PRIM of \CALU_reg[1]\ : label is "LDC";
-  attribute SOFT_HLUTNM of \CALU_reg[1]_i_4\ : label is "soft_lutpair10";
   attribute XILINX_LEGACY_PRIM of \CALU_reg[2]\ : label is "LDC";
-  attribute SOFT_HLUTNM of \CALU_reg[2]_i_7\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \CALU_reg[2]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \CALU_reg[2]_i_5\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \CALU_reg[2]_i_8\ : label is "soft_lutpair4";
   attribute XILINX_LEGACY_PRIM of CDM_reg : label is "LDC";
   attribute SOFT_HLUTNM of CDM_reg_i_1 : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of CDM_reg_i_2 : label is "soft_lutpair5";
@@ -114,7 +114,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Control_Unit
   attribute SOFT_HLUTNM of \CEU_reg[1]_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \CEU_reg[1]_i_2\ : label is "soft_lutpair1";
   attribute XILINX_LEGACY_PRIM of \CEU_reg[2]\ : label is "LDC";
-  attribute SOFT_HLUTNM of \CEU_reg[2]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \CEU_reg[2]_i_1\ : label is "soft_lutpair3";
   attribute XILINX_LEGACY_PRIM of CRF_reg : label is "LDC";
   attribute SOFT_HLUTNM of CRF_reg_i_1 : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of CRF_reg_i_2 : label is "soft_lutpair8";
@@ -126,7 +126,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Control_Unit
   attribute SOFT_HLUTNM of OS_reg_i_3 : label is "soft_lutpair6";
   attribute XILINX_LEGACY_PRIM of \PCS_reg[0]\ : label is "LDC";
   attribute XILINX_LEGACY_PRIM of \PCS_reg[1]\ : label is "LDC";
-  attribute SOFT_HLUTNM of \PCS_reg[1]_i_1\ : label is "soft_lutpair4";
 begin
 ALUS1_reg: unisim.vcomponents.LDCE
      port map (
@@ -155,7 +154,7 @@ ALUS1_reg_i_2: unisim.vcomponents.LUT5
       I1 => OP_CODE(3),
       I2 => RST,
       I3 => OS_reg_i_3_n_0,
-      I4 => \CALU_reg[2]_i_4_n_0\,
+      I4 => \CALU_reg[2]_i_7_n_0\,
       O => ALUS1_reg_i_2_n_0
     );
 ALUS2_reg: unisim.vcomponents.LDCE
@@ -235,7 +234,7 @@ BS_reg_i_2: unisim.vcomponents.LUT2
       INIT => X"2"
     )
         port map (
-      I0 => \CALU_reg[2]_i_4_n_0\,
+      I0 => \CALU_reg[2]_i_7_n_0\,
       I1 => OP_CODE(2),
       O => BS_reg_i_2_n_0
     );
@@ -264,15 +263,15 @@ BS_reg_i_2: unisim.vcomponents.LUT2
     );
 \CALU_reg[0]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AAAAAAAAFEAAAAAA"
+      INIT => X"AAEAAAEAAAEAAAAA"
     )
         port map (
       I0 => \CALU_reg[0]_i_4_n_0\,
-      I1 => FUNCT_3(1),
-      I2 => FUNCT_3(2),
-      I3 => OP_CODE(5),
-      I4 => OP_CODE(4),
-      I5 => OS_reg_i_3_n_0,
+      I1 => OP_CODE(5),
+      I2 => OP_CODE(4),
+      I3 => OS_reg_i_3_n_0,
+      I4 => FUNCT_3(1),
+      I5 => FUNCT_3(2),
       O => \CALU_reg[0]_i_2_n_0\
     );
 \CALU_reg[0]_i_3\: unisim.vcomponents.LUT3
@@ -319,7 +318,7 @@ BS_reg_i_2: unisim.vcomponents.LUT2
       I2 => OP_CODE(5),
       I3 => OP_CODE(4),
       I4 => OS_reg_i_3_n_0,
-      I5 => \CALU_reg[2]_i_4_n_0\,
+      I5 => \CALU_reg[2]_i_7_n_0\,
       O => \CALU_reg[1]_i_1_n_0\
     );
 \CALU_reg[1]_i_2\: unisim.vcomponents.LUT6
@@ -329,7 +328,7 @@ BS_reg_i_2: unisim.vcomponents.LUT2
         port map (
       I0 => \CALU_reg[2]_i_3_n_0\,
       I1 => \CALU_reg[1]_i_3_n_0\,
-      I2 => \CALU_reg[1]_i_4_n_0\,
+      I2 => \CALU_reg[2]_i_5_n_0\,
       I3 => FUNCT_3(2),
       I4 => FUNCT_3(1),
       I5 => FUNCT_3(0),
@@ -341,24 +340,14 @@ BS_reg_i_2: unisim.vcomponents.LUT2
     )
         port map (
       I0 => OP_CODE(6),
-      I1 => \CALU_reg[1]_i_5_n_0\,
-      I2 => \CALU_reg[1]_i_6_n_0\,
+      I1 => \CALU_reg[1]_i_4_n_0\,
+      I2 => \CALU_reg[1]_i_5_n_0\,
       I3 => CDM_reg_i_4_n_0,
       I4 => ALUS2_reg_i_3_n_0,
       I5 => OP_CODE(2),
       O => \CALU_reg[1]_i_3_n_0\
     );
-\CALU_reg[1]_i_4\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"08"
-    )
-        port map (
-      I0 => OP_CODE(5),
-      I1 => OP_CODE(4),
-      I2 => OS_reg_i_3_n_0,
-      O => \CALU_reg[1]_i_4_n_0\
-    );
-\CALU_reg[1]_i_5\: unisim.vcomponents.LUT6
+\CALU_reg[1]_i_4\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0010000000000000"
     )
@@ -369,9 +358,9 @@ BS_reg_i_2: unisim.vcomponents.LUT2
       I3 => FUNCT_7(6),
       I4 => OP_CODE(5),
       I5 => OP_CODE(4),
-      O => \CALU_reg[1]_i_5_n_0\
+      O => \CALU_reg[1]_i_4_n_0\
     );
-\CALU_reg[1]_i_6\: unisim.vcomponents.LUT3
+\CALU_reg[1]_i_5\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"01"
     )
@@ -379,7 +368,7 @@ BS_reg_i_2: unisim.vcomponents.LUT2
       I0 => FUNCT_7(2),
       I1 => FUNCT_7(1),
       I2 => FUNCT_7(0),
-      O => \CALU_reg[1]_i_6_n_0\
+      O => \CALU_reg[1]_i_5_n_0\
     );
 \CALU_reg[2]\: unisim.vcomponents.LDCE
     generic map(
@@ -392,30 +381,29 @@ BS_reg_i_2: unisim.vcomponents.LUT2
       GE => '1',
       Q => CALU(2)
     );
-\CALU_reg[2]_i_1\: unisim.vcomponents.LUT6
+\CALU_reg[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AFEEAFAAAFAFAFAA"
+      INIT => X"FFFFFF40"
     )
         port map (
-      I0 => \CALU_reg[2]_i_4_n_0\,
-      I1 => \CALU_reg[2]_i_5_n_0\,
-      I2 => \CALU_reg[2]_i_6_n_0\,
-      I3 => OS_reg_i_3_n_0,
-      I4 => OP_CODE(4),
-      I5 => OP_CODE(5),
+      I0 => FUNCT_7(0),
+      I1 => \CALU_reg[2]_i_4_n_0\,
+      I2 => \CALU_reg[2]_i_5_n_0\,
+      I3 => \CALU_reg[2]_i_6_n_0\,
+      I4 => \CALU_reg[2]_i_7_n_0\,
       O => \CALU_reg[2]_i_1_n_0\
     );
 \CALU_reg[2]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFF00FF00B9"
+      INIT => X"FFFFFFFF00FF008F"
     )
         port map (
       I0 => FUNCT_3(2),
-      I1 => FUNCT_3(1),
-      I2 => FUNCT_3(0),
+      I1 => FUNCT_3(0),
+      I2 => FUNCT_3(1),
       I3 => OS_reg_i_3_n_0,
-      I4 => \CALU_reg[2]_i_7_n_0\,
-      I5 => \CALU_reg[2]_i_4_n_0\,
+      I4 => \CALU_reg[2]_i_8_n_0\,
+      I5 => \CALU_reg[2]_i_7_n_0\,
       O => \CALU_reg[2]_i_2_n_0\
     );
 \CALU_reg[2]_i_3\: unisim.vcomponents.LUT3
@@ -430,6 +418,42 @@ BS_reg_i_2: unisim.vcomponents.LUT2
     );
 \CALU_reg[2]_i_4\: unisim.vcomponents.LUT6
     generic map(
+      INIT => X"0000000100000000"
+    )
+        port map (
+      I0 => FUNCT_7(3),
+      I1 => FUNCT_7(4),
+      I2 => FUNCT_7(1),
+      I3 => FUNCT_7(2),
+      I4 => FUNCT_7(6),
+      I5 => FUNCT_7(5),
+      O => \CALU_reg[2]_i_4_n_0\
+    );
+\CALU_reg[2]_i_5\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"08"
+    )
+        port map (
+      I0 => OP_CODE(5),
+      I1 => OP_CODE(4),
+      I2 => OS_reg_i_3_n_0,
+      O => \CALU_reg[2]_i_5_n_0\
+    );
+\CALU_reg[2]_i_6\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"4040404000400000"
+    )
+        port map (
+      I0 => FUNCT_3(1),
+      I1 => FUNCT_3(2),
+      I2 => FUNCT_3(0),
+      I3 => OP_CODE(5),
+      I4 => OP_CODE(4),
+      I5 => OS_reg_i_3_n_0,
+      O => \CALU_reg[2]_i_6_n_0\
+    );
+\CALU_reg[2]_i_7\: unisim.vcomponents.LUT6
+    generic map(
       INIT => X"0020000000000000"
     )
         port map (
@@ -439,46 +463,15 @@ BS_reg_i_2: unisim.vcomponents.LUT2
       I3 => OP_CODE(3),
       I4 => OP_CODE(0),
       I5 => OP_CODE(1),
-      O => \CALU_reg[2]_i_4_n_0\
+      O => \CALU_reg[2]_i_7_n_0\
     );
-\CALU_reg[2]_i_5\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000002"
-    )
-        port map (
-      I0 => \CALU_reg[2]_i_8_n_0\,
-      I1 => FUNCT_7(2),
-      I2 => FUNCT_7(1),
-      I3 => FUNCT_7(4),
-      I4 => FUNCT_7(3),
-      I5 => FUNCT_7(0),
-      O => \CALU_reg[2]_i_5_n_0\
-    );
-\CALU_reg[2]_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"B"
-    )
-        port map (
-      I0 => FUNCT_3(1),
-      I1 => FUNCT_3(2),
-      O => \CALU_reg[2]_i_6_n_0\
-    );
-\CALU_reg[2]_i_7\: unisim.vcomponents.LUT2
+\CALU_reg[2]_i_8\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => OP_CODE(5),
       I1 => OP_CODE(4),
-      O => \CALU_reg[2]_i_7_n_0\
-    );
-\CALU_reg[2]_i_8\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => FUNCT_7(5),
-      I1 => FUNCT_7(6),
       O => \CALU_reg[2]_i_8_n_0\
     );
 CDM_reg: unisim.vcomponents.LDCE
@@ -705,7 +698,7 @@ CRF_reg_i_2: unisim.vcomponents.LUT4
         port map (
       I0 => CRF_reg_i_3_n_0,
       I1 => OS_reg_i_3_n_0,
-      I2 => \CALU_reg[2]_i_4_n_0\,
+      I2 => \CALU_reg[2]_i_7_n_0\,
       I3 => \DWS_reg[0]_i_1_n_0\,
       O => CRF_reg_i_2_n_0
     );

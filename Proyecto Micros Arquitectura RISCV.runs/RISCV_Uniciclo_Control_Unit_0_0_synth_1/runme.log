@@ -17,14 +17,14 @@ WARNING: [IP_Flow 19-3571] IP 'RISCV_Uniciclo_Control_Unit_0_0' is restricted:
 * Module reference is stale and needs refreshing.
 Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1802'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1802'
-INFO: [Common 17-86] Your Synthesis license expires in 8 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 7 day(s)
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11004
+INFO: [Synth 8-7075] Helper process launched with PID 5604
 load Versal unisim library
 load Versal unisim library
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.477 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1102.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RISCV_Uniciclo_Control_Unit_0_0' [c:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.gen/sources_1/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Control_Unit_0_0/synth/RISCV_Uniciclo_Control_Unit_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Control_Unit.v:23]
@@ -32,10 +32,10 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chri
 INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (1#1) [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Control_Unit.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'RISCV_Uniciclo_Control_Unit_0_0' (2#1) [c:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.gen/sources_1/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Control_Unit_0_0/synth/RISCV_Uniciclo_Control_Unit_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1101.477 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1102.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1101.477 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1102.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -43,7 +43,7 @@ Start Loading Part and Timing Information
 Loading part: xcvc1802-viva1596-1LHP-i-L
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1101.477 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1102.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcvc1802-viva1596-1LHP-i-L
 WARNING: [Synth 8-327] inferring latch for variable 'OS_reg' [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Control_Unit.v:38]
@@ -57,7 +57,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'CEU_reg' [C:/Users/chris_qw
 WARNING: [Synth 8-327] inferring latch for variable 'DWS_reg' [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Control_Unit.v:35]
 WARNING: [Synth 8-327] inferring latch for variable 'PCS_reg' [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Control_Unit.v:34]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1101.477 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1102.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -99,20 +99,20 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1484.418 ; gain = 382.941
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 1478.895 ; gain = 376.777
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1490.590 ; gain = 389.113
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.207 ; gain = 382.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -130,37 +130,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -177,10 +177,10 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     1|
-|2     |LUT2 |     6|
+|2     |LUT2 |     4|
 |3     |LUT3 |    11|
 |4     |LUT4 |     3|
-|5     |LUT5 |    13|
+|5     |LUT5 |    14|
 |6     |LUT6 |    17|
 |7     |LDC  |    14|
 |8     |LDCE |     2|
@@ -190,36 +190,36 @@ Report Instance Areas:
 +------+---------+-------------+------+
 |      |Instance |Module       |Cells |
 +------+---------+-------------+------+
-|1     |top      |             |    67|
-|2     |  inst   |Control_Unit |    67|
+|1     |top      |             |    66|
+|2     |  inst   |Control_Unit |    66|
 +------+---------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1490.730 ; gain = 389.254
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1490.730 ; gain = 389.254
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1484.387 ; gain = 382.270
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1502.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1497.277 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Constraints 18-5718] GCLK Deskew mode is set to Off via param.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1725.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   LDC => LDCE: 14 instances
 
-Synth Design complete, checksum: 20ad295f
+Synth Design complete, checksum: 66bf5a83
 INFO: [Common 17-83] Releasing license: Synthesis
 21 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1725.672 ; gain = 624.195
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:20 . Memory (MB): peak = 1720.672 ; gain = 618.555
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Control_Unit_0_0_synth_1/RISCV_Uniciclo_Control_Unit_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2046.480 ; gain = 320.809
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2043.523 ; gain = 322.852
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Control_Unit_0_0_synth_1/RISCV_Uniciclo_Control_Unit_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RISCV_Uniciclo_Control_Unit_0_0_utilization_synth.rpt -pb RISCV_Uniciclo_Control_Unit_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 21:45:54 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  9 13:35:53 2021...

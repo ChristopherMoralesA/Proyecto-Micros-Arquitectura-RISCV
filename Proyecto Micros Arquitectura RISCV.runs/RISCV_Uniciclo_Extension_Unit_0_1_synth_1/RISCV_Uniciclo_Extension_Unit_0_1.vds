@@ -2,8 +2,8 @@
 # Vivado v2020.3 (64-bit)
 # SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
 # IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-# Start of session at: Tue Jun  8 23:52:27 2021
-# Process ID: 10296
+# Start of session at: Wed Jun  9 13:34:05 2021
+# Process ID: 14588
 # Current directory: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Extension_Unit_0_1_synth_1
 # Command line: vivado.exe -log RISCV_Uniciclo_Extension_Unit_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_Uniciclo_Extension_Unit_0_1.tcl
 # Log file: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Extension_Unit_0_1_synth_1/RISCV_Uniciclo_Extension_Unit_0_1.vds
@@ -17,24 +17,24 @@ WARNING: [IP_Flow 19-3571] IP 'RISCV_Uniciclo_Extension_Unit_0_1' is restricted:
 * Module reference is stale and needs refreshing.
 Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1802'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1802'
-INFO: [Common 17-86] Your Synthesis license expires in 8 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 7 day(s)
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6004
+INFO: [Synth 8-7075] Helper process launched with PID 9832
 load Versal unisim library
 load Versal unisim library
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1106.184 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1102.152 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RISCV_Uniciclo_Extension_Unit_0_1' [c:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.gen/sources_1/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Extension_Unit_0_1/synth/RISCV_Uniciclo_Extension_Unit_0_1.v:58]
 INFO: [Synth 8-6157] synthesizing module 'Extension_Unit' [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Extension_Unit.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Extension_Unit' (1#1) [C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Extension_Unit.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'RISCV_Uniciclo_Extension_Unit_0_1' (2#1) [c:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.gen/sources_1/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Extension_Unit_0_1/synth/RISCV_Uniciclo_Extension_Unit_0_1.v:58]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1106.184 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1102.152 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1106.184 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1102.152 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -42,11 +42,11 @@ Start Loading Part and Timing Information
 Loading part: xcvc1802-viva1596-1LHP-i-L
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1106.184 ; gain = 0.000
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcvc1802-viva1596-1LHP-i-L
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1102.152 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1106.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1102.152 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -71,20 +71,20 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1470.238 ; gain = 364.055
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1472.430 ; gain = 370.277
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1482.133 ; gain = 375.949
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1484.348 ; gain = 382.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.504 ; gain = 382.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -102,37 +102,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -161,17 +161,17 @@ Report Instance Areas:
 |2     |  inst   |Extension_Unit |    32|
 +------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1482.301 ; gain = 376.117
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1485.309 ; gain = 383.156
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1495.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1497.387 ; gain = 0.000
 INFO: [Constraints 18-5718] GCLK Deskew mode is set to Off via param.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1722.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1725.141 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -179,8 +179,8 @@ Synth Design complete, checksum: 888034b2
 INFO: [Common 17-83] Releasing license: Synthesis
 18 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:09 . Memory (MB): peak = 1722.867 ; gain = 616.684
-ERROR: [Common 17-70] Application Exception: DcpWriter - Could not open file for writing: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Extension_Unit_0_1_synth_1/.Xil/Vivado-10296-DESKTOP-NELKSFF/dcp1/RISCV_Uniciclo_Extension_Unit_0_1_in_context.xdc
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:19 . Memory (MB): peak = 1725.141 ; gain = 622.988
+ERROR: [Common 17-70] Application Exception: DcpWriter - Could not open file for writing: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Extension_Unit_0_1_synth_1/.Xil/Vivado-14588-DESKTOP-NELKSFF/dcp1/RISCV_Uniciclo_Extension_Unit_0_1_in_context.xdc
 
     while executing
 "write_checkpoint -force -noxdef RISCV_Uniciclo_Extension_Unit_0_1.dcp"
@@ -191,4 +191,4 @@ close [open __synthesis_is_running__ w]
 OPTRACE "synth_design" START { }
 synth_design -top RISCV_Uniciclo_Extension_Unit_0_..."
     (file "RISCV_Uniciclo_Extension_Unit_0_1.tcl" line 110)
-INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 23:53:51 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  9 13:35:37 2021...

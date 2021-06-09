@@ -90,7 +90,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {{C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/instrucciones_IM.mem}}
 read_verilog -library xil_defaultlib {{C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Modulos/Instruction_Memory.v}}
-read_ip -quiet {{c:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.srcs/sources_1/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Instruction_Memory_0_1/RISCV_Uniciclo_Instruction_Memory_0_1.xci}}
+read_ip -quiet {{C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.srcs/sources_1/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Instruction_Memory_0_1/RISCV_Uniciclo_Instruction_Memory_0_1.xci}}
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

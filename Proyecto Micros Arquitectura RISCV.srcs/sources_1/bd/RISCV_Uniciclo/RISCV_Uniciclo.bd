@@ -27,9 +27,9 @@
       "Mux2a1_32bit_3": "",
       "Mux2a1_32bit_4": "",
       "ALU_0": "",
-      "Control_Unit_0": "",
       "Data_Memory_0": "",
-      "SIEMPRE4_0": ""
+      "SIEMPRE4_0": "",
+      "Control_Unit_0": ""
     },
     "ports": {
       "CLK": {
@@ -582,6 +582,59 @@
           }
         }
       },
+      "Data_Memory_0": {
+        "vlnv": "xilinx.com:module_ref:Data_Memory:1.0",
+        "xci_name": "RISCV_Uniciclo_Data_Memory_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Data_Memory_0_1\\RISCV_Uniciclo_Data_Memory_0_1.xci",
+        "inst_hier_path": "Data_Memory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Data_Memory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RW": {
+            "direction": "I"
+          },
+          "ADDr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "SIEMPRE4_0": {
+        "vlnv": "xilinx.com:module_ref:SIEMPRE4:1.0",
+        "xci_name": "RISCV_Uniciclo_SIEMPRE4_0_0",
+        "xci_path": "ip\\RISCV_Uniciclo_SIEMPRE4_0_0\\RISCV_Uniciclo_SIEMPRE4_0_0.xci",
+        "inst_hier_path": "SIEMPRE4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SIEMPRE4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SIEMPRE4": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
       "Control_Unit_0": {
         "vlnv": "xilinx.com:module_ref:Control_Unit:1.0",
         "xci_name": "RISCV_Uniciclo_Control_Unit_0_0",
@@ -648,59 +701,6 @@
           "PCS": {
             "direction": "O",
             "left": "1",
-            "right": "0"
-          }
-        }
-      },
-      "Data_Memory_0": {
-        "vlnv": "xilinx.com:module_ref:Data_Memory:1.0",
-        "xci_name": "RISCV_Uniciclo_Data_Memory_0_1",
-        "xci_path": "ip\\RISCV_Uniciclo_Data_Memory_0_1\\RISCV_Uniciclo_Data_Memory_0_1.xci",
-        "inst_hier_path": "Data_Memory_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "Data_Memory",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "RW": {
-            "direction": "I"
-          },
-          "ADDr": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "Din": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "CLK": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "Dout": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          }
-        }
-      },
-      "SIEMPRE4_0": {
-        "vlnv": "xilinx.com:module_ref:SIEMPRE4:1.0",
-        "xci_name": "RISCV_Uniciclo_SIEMPRE4_0_0",
-        "xci_path": "ip\\RISCV_Uniciclo_SIEMPRE4_0_0\\RISCV_Uniciclo_SIEMPRE4_0_0.xci",
-        "inst_hier_path": "SIEMPRE4_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "SIEMPRE4",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "SIEMPRE4": {
-            "direction": "O",
-            "left": "31",
             "right": "0"
           }
         }
