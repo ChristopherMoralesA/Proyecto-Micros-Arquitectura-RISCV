@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Control_Unit(input [6:0]OP_CODE, [2:0]FUNCT_3, [6:0]FUNCT_7, RST, output reg CRF, reg [2:0]CEU, reg [2:0]CALU, reg CDM, reg [1:0]PCS, reg [1:0]DWS, reg ALUS1, reg ALUS2, reg OS, reg BS
+module Control_Unit(input RST, [6:0]OP_CODE, [2:0]FUNCT_3, [6:0]FUNCT_7,  output  reg OS, reg CDM, reg [2:0]CALU,reg BS, reg ALUS1, reg ALUS2, reg CRF, reg [2:0]CEU, reg [1:0]DWS, reg [1:0]PCS
 );
 always@(*)
    begin

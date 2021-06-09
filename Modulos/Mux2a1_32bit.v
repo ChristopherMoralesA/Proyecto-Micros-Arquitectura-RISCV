@@ -15,9 +15,10 @@
 
 
 module Mux2a1_32bit(
+    input SEL,
     input [31:0] IN0,
     input [31:0] IN1,
-    input SEL,
+    
     output reg [31:0] OUT
     );
     

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto Micros Arquitectura RISCV.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c9a92bef8d88428592ac3a291f3548f9"/>
@@ -60,20 +60,20 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="2"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="3"/>
+    <Option Name="WTModelSimExportSim" Val="3"/>
+    <Option Name="WTQuestaExportSim" Val="3"/>
+    <Option Name="WTIesExportSim" Val="3"/>
+    <Option Name="WTVcsExportSim" Val="3"/>
+    <Option Name="WTRivieraExportSim" Val="3"/>
+    <Option Name="WTActivehdlExportSim" Val="3"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -152,9 +152,130 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/Modulos/instrucciones_IM.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/RISCV_Uniciclo/RISCV_Uniciclo.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux4a1_32bit_0_1/RISCV_Uniciclo_Mux4a1_32bit_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux4a1_32bit_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux4a1_32bit_1_1/RISCV_Uniciclo_Mux4a1_32bit_1_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux4a1_32bit_1_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_PC_Register_0_2/RISCV_Uniciclo_PC_Register_0_2.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_PC_Register_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Instruction_Memory_0_1/RISCV_Uniciclo_Instruction_Memory_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Instruction_Memory_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Sumar4_0_1/RISCV_Uniciclo_Sumar4_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Sumar4_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Register_File_0_1/RISCV_Uniciclo_Register_File_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Register_File_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Control_Unit_0_0/RISCV_Uniciclo_Control_Unit_0_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Control_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_NAND_0_0/RISCV_Uniciclo_NAND_0_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_NAND_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Sumador_0_1/RISCV_Uniciclo_Sumador_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Sumador_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_ALU_0_1/RISCV_Uniciclo_ALU_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_ALU_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux2a1_32bit_0_1/RISCV_Uniciclo_Mux2a1_32bit_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux2a1_32bit_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux2a1_32bit_3_0/RISCV_Uniciclo_Mux2a1_32bit_3_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux2a1_32bit_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux2a1_32bit_2_0/RISCV_Uniciclo_Mux2a1_32bit_2_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux2a1_32bit_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux2a1_32bit_1_1/RISCV_Uniciclo_Mux2a1_32bit_1_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux2a1_32bit_1_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Extension_Unit_0_1/RISCV_Uniciclo_Extension_Unit_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Extension_Unit_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_OR_32bit_0_0/RISCV_Uniciclo_OR_32bit_0_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_OR_32bit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Data_Memory_0_1/RISCV_Uniciclo_Data_Memory_0_1.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Data_Memory_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_Mux2a1_32bit_4_0/RISCV_Uniciclo_Mux2a1_32bit_4_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_Mux2a1_32bit_4_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RISCV_Uniciclo.bd" FileRelPathName="ip/RISCV_Uniciclo_SIEMPRE4_0_0/RISCV_Uniciclo_SIEMPRE4_0_0.xci">
+          <Proxy FileSetName="RISCV_Uniciclo_SIEMPRE4_0_0"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PPRDIR/Modulos/ALU.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Modulos/Control_Unit.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Modulos/Sumador.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Modulos/Sumar4.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Modulos/PC_Register.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/Modulos/SIEMPRE4.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Data_Memory"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/Modulos/Data_Memory.v"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -165,11 +286,18 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/test_RISCV_uniciclo.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Data_Memory"/>
+        <Option Name="TopModule" Val="test_RISCV_uniciclo"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
@@ -184,6 +312,120 @@
       <Filter Type="Utils"/>
       <Config>
         <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux4a1_32bit_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux4a1_32bit_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux4a1_32bit_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux4a1_32bit_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux4a1_32bit_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux4a1_32bit_1_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux4a1_32bit_1_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux4a1_32bit_1_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_PC_Register_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_PC_Register_0_2" RelGenDir="$PGENDIR/RISCV_Uniciclo_PC_Register_0_2">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_PC_Register_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Instruction_Memory_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Instruction_Memory_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Instruction_Memory_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Instruction_Memory_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Sumar4_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Sumar4_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Sumar4_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Sumar4_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Register_File_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Register_File_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Register_File_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Register_File_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Sumador_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Sumador_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Sumador_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Sumador_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Extension_Unit_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Extension_Unit_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Extension_Unit_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Extension_Unit_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux2a1_32bit_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux2a1_32bit_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux2a1_32bit_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux2a1_32bit_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux2a1_32bit_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux2a1_32bit_1_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux2a1_32bit_1_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux2a1_32bit_1_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_ALU_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_ALU_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_ALU_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_ALU_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_OR_32bit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_OR_32bit_0_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_OR_32bit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_OR_32bit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_NAND_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_NAND_0_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_NAND_0_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_NAND_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux2a1_32bit_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux2a1_32bit_2_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux2a1_32bit_2_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux2a1_32bit_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux2a1_32bit_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux2a1_32bit_3_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux2a1_32bit_3_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux2a1_32bit_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Mux2a1_32bit_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Mux2a1_32bit_4_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_Mux2a1_32bit_4_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Mux2a1_32bit_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Control_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Control_Unit_0_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_Control_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Control_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_Data_Memory_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_Data_Memory_0_1" RelGenDir="$PGENDIR/RISCV_Uniciclo_Data_Memory_0_1">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_Data_Memory_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RISCV_Uniciclo_SIEMPRE4_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RISCV_Uniciclo_SIEMPRE4_0_0" RelGenDir="$PGENDIR/RISCV_Uniciclo_SIEMPRE4_0_0">
+      <Config>
+        <Option Name="TopModule" Val="RISCV_Uniciclo_SIEMPRE4_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -206,18 +448,603 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../Proyecto Micros Arquitectura RISCV.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux4a1_32bit_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux4a1_32bit_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux4a1_32bit_1_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux4a1_32bit_1_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux4a1_32bit_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux4a1_32bit_1_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux4a1_32bit_1_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_PC_Register_0_2_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_PC_Register_0_2" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_PC_Register_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_PC_Register_0_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_PC_Register_0_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Instruction_Memory_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Instruction_Memory_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Instruction_Memory_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Instruction_Memory_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Instruction_Memory_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Sumar4_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Sumar4_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Sumar4_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Sumar4_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Sumar4_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Register_File_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Register_File_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Register_File_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Register_File_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Register_File_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Sumador_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Sumador_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Sumador_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Sumador_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Sumador_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Extension_Unit_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Extension_Unit_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Extension_Unit_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Extension_Unit_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Extension_Unit_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux2a1_32bit_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux2a1_32bit_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_1_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux2a1_32bit_1_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux2a1_32bit_1_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_1_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_ALU_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_ALU_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_ALU_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_ALU_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_ALU_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_OR_32bit_0_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_OR_32bit_0_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_OR_32bit_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_OR_32bit_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_OR_32bit_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_NAND_0_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_NAND_0_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_NAND_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_NAND_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_NAND_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_2_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux2a1_32bit_2_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux2a1_32bit_2_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_3_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux2a1_32bit_3_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux2a1_32bit_3_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_3_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_4_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Mux2a1_32bit_4_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Mux2a1_32bit_4_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_4_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Control_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Control_Unit_0_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Control_Unit_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Control_Unit_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Control_Unit_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Data_Memory_0_1_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_Data_Memory_0_1" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Data_Memory_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_Data_Memory_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Data_Memory_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_SIEMPRE4_0_0_synth_1" Type="Ft3:Synth" SrcSet="RISCV_Uniciclo_SIEMPRE4_0_0" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_SIEMPRE4_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RISCV_Uniciclo_SIEMPRE4_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_SIEMPRE4_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../Proyecto Micros Arquitectura RISCV.srcs/utils_1/imports/impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux4a1_32bit_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux4a1_32bit_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux4a1_32bit_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux4a1_32bit_1_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux4a1_32bit_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux4a1_32bit_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux4a1_32bit_1_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_PC_Register_0_2_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_PC_Register_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_PC_Register_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_PC_Register_0_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Instruction_Memory_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Instruction_Memory_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Instruction_Memory_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Instruction_Memory_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Sumar4_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Sumar4_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Sumar4_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Sumar4_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Register_File_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Register_File_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Register_File_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Register_File_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Sumador_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Sumador_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Sumador_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Sumador_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Extension_Unit_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Extension_Unit_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Extension_Unit_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Extension_Unit_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux2a1_32bit_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_1_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux2a1_32bit_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_1_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_ALU_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_ALU_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_ALU_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_ALU_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_OR_32bit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_OR_32bit_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_OR_32bit_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_OR_32bit_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_NAND_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_NAND_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_NAND_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_NAND_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_2_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux2a1_32bit_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_3_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux2a1_32bit_3_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_3_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Mux2a1_32bit_4_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Mux2a1_32bit_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Mux2a1_32bit_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Mux2a1_32bit_4_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Control_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Control_Unit_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Control_Unit_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Control_Unit_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_Data_Memory_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_Data_Memory_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_Data_Memory_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_Data_Memory_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_device_image"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RISCV_Uniciclo_SIEMPRE4_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcvc1802-viva1596-1LHP-i-L" ConstrsSet="RISCV_Uniciclo_SIEMPRE4_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RISCV_Uniciclo_SIEMPRE4_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RISCV_Uniciclo_SIEMPRE4_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

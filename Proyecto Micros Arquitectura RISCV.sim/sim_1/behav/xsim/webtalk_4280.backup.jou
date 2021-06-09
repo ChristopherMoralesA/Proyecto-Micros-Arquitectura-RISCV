@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Wed Jun  9 00:03:57 2021
+# Process ID: 4280
+# Current directory: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.sim/sim_1/behav/xsim/xsim.dir/test_RISCV_uniciclo_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/chris_qwzwysn/Proyecto -notrace

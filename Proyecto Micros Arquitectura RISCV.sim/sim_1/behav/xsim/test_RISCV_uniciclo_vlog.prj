@@ -1,0 +1,43 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Modulos/Mux4a1_32bit.v" \
+"../../../../Modulos/PC_Register.v" \
+"../../../../Modulos/Instruction_Memory.v" \
+"../../../../Modulos/Sumar4.v" \
+"../../../../Modulos/Register_File.v" \
+"../../../../Modulos/Sumador.v" \
+"../../../../Modulos/Extension_Unit.v" \
+"../../../../Modulos/Mux2a1_32bit.v" \
+"../../../../Modulos/ALU.v" \
+"../../../../Modulos/OR_32bit.v" \
+"../../../../Modulos/NAND.v" \
+"../../../../Modulos/Data_Memory.v" \
+"../../../../Modulos/Control_Unit.v" \
+"../../../../Modulos/SIEMPRE4.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux4a1_32bit_0_1/sim/RISCV_Uniciclo_Mux4a1_32bit_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux4a1_32bit_1_1/sim/RISCV_Uniciclo_Mux4a1_32bit_1_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_PC_Register_0_2/sim/RISCV_Uniciclo_PC_Register_0_2.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Instruction_Memory_0_1/sim/RISCV_Uniciclo_Instruction_Memory_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Sumar4_0_1/sim/RISCV_Uniciclo_Sumar4_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Register_File_0_1/sim/RISCV_Uniciclo_Register_File_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Sumador_0_1/sim/RISCV_Uniciclo_Sumador_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Extension_Unit_0_1/sim/RISCV_Uniciclo_Extension_Unit_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux2a1_32bit_0_1/sim/RISCV_Uniciclo_Mux2a1_32bit_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux2a1_32bit_1_1/sim/RISCV_Uniciclo_Mux2a1_32bit_1_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_ALU_0_1/sim/RISCV_Uniciclo_ALU_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_OR_32bit_0_0/sim/RISCV_Uniciclo_OR_32bit_0_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_NAND_0_0/sim/RISCV_Uniciclo_NAND_0_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux2a1_32bit_2_0/sim/RISCV_Uniciclo_Mux2a1_32bit_2_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux2a1_32bit_3_0/sim/RISCV_Uniciclo_Mux2a1_32bit_3_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Data_Memory_0_1/sim/RISCV_Uniciclo_Data_Memory_0_1.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Mux2a1_32bit_4_0/sim/RISCV_Uniciclo_Mux2a1_32bit_4_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_Control_Unit_0_0/sim/RISCV_Uniciclo_Control_Unit_0_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/sim/RISCV_Uniciclo.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.ip_user_files/bd/RISCV_Uniciclo/ip/RISCV_Uniciclo_SIEMPRE4_0_0/sim/RISCV_Uniciclo_SIEMPRE4_0_0.v" \
+"../../../../Proyecto Micros Arquitectura RISCV.srcs/sim_1/new/test_RISCV_uniciclo.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

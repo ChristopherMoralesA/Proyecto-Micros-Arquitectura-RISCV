@@ -17,15 +17,16 @@
 
 
 module Register_File(
-    input  CLK,
-    input  RES,
+    input WE_RF,
     input  [4:0] RA_RF,
     input  [4:0] RB_RF,
     input  [4:0] RW_RF,
     input  [31:0] DW_RF,
     output reg [31:0] A_RF,
     output reg [31:0] B_RF,
-    input WE_RF
+    input  CLK,
+    input  RES
+    
     );
     reg [31:0] RF[0:31];
     

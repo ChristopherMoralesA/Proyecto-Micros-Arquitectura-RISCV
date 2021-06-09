@@ -21,8 +21,8 @@
 
 
 module PC_Register(
-    input CLK, RST,
     input [31:0] D,
+    input CLK, RST,
     output reg [31:0] Q    
     );
     

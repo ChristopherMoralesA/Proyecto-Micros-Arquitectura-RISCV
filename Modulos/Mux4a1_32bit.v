@@ -15,11 +15,12 @@
 
 
 module Mux4a1_32bit(
+    input [1:0]  SEL,
     input [31:0] IN0,
     input [31:0] IN1,
     input [31:0] IN2,
     input [31:0] IN3,
-    input [1:0]  SEL,
+    
     output reg [31:0] OUT
     );
     

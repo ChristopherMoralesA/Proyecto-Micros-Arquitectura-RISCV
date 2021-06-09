@@ -1,0 +1,47 @@
+Vivado Simulator v2020.3.0
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.3/bin/unwrapped/win64.o/xelab.exe -wto c9a92bef8d88428592ac3a291f3548f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L unisims_ver -L secureip -L xpm --snapshot test_RISCV_uniciclo_behav xil_defaultlib.test_RISCV_uniciclo xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RISCV_Uniciclo_ALU_0_1
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.RISCV_Uniciclo_Control_Unit_0_0
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.RISCV_Uniciclo_Data_Memory_0_1
+Compiling module xil_defaultlib.Extension_Unit
+Compiling module xil_defaultlib.RISCV_Uniciclo_Extension_Unit_0_...
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RISCV_Uniciclo_Instruction_Memor...
+Compiling module xil_defaultlib.Mux2a1_32bit
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux2a1_32bit_0_1
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux2a1_32bit_1_1
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux2a1_32bit_2_0
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux2a1_32bit_3_0
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux2a1_32bit_4_0
+Compiling module xil_defaultlib.Mux4a1_32bit
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux4a1_32bit_0_1
+Compiling module xil_defaultlib.RISCV_Uniciclo_Mux4a1_32bit_1_1
+Compiling module xil_defaultlib.NAND
+Compiling module xil_defaultlib.RISCV_Uniciclo_NAND_0_0
+Compiling module xil_defaultlib.OR_32bit
+Compiling module xil_defaultlib.RISCV_Uniciclo_OR_32bit_0_0
+Compiling module xil_defaultlib.PC_Register
+Compiling module xil_defaultlib.RISCV_Uniciclo_PC_Register_0_2
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.RISCV_Uniciclo_Register_File_0_1
+Compiling module xil_defaultlib.SIEMPRE4
+Compiling module xil_defaultlib.RISCV_Uniciclo_SIEMPRE4_0_0
+Compiling module xil_defaultlib.Sumador
+Compiling module xil_defaultlib.RISCV_Uniciclo_Sumador_0_1
+Compiling module xil_defaultlib.Sumar4
+Compiling module xil_defaultlib.RISCV_Uniciclo_Sumar4_0_1
+Compiling module xil_defaultlib.RISCV_Uniciclo
+Compiling module xil_defaultlib.test_RISCV_uniciclo
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_RISCV_uniciclo_behav

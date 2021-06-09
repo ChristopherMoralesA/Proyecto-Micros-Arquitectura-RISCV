@@ -1,0 +1,955 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x258B12B128222881",
+      "device": "xcvc1802-viva1596-1LHP-i-L",
+      "gen_directory": "../../../../Proyecto Micros Arquitectura RISCV.gen/sources_1/bd/RISCV_Uniciclo",
+      "name": "RISCV_Uniciclo",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Instruction_Memory_0": "",
+      "Sumar4_0": "",
+      "Sumador_0": "",
+      "Extension_Unit_0": "",
+      "OR_32bit_0": "",
+      "NAND_0": "",
+      "Mux4a1_32bit_0": "",
+      "Mux4a1_32bit_1": "",
+      "PC_Register_0": "",
+      "Register_File_0": "",
+      "Mux2a1_32bit_0": "",
+      "Mux2a1_32bit_1": "",
+      "Mux2a1_32bit_2": "",
+      "Mux2a1_32bit_3": "",
+      "Mux2a1_32bit_4": "",
+      "ALU_0": "",
+      "Control_Unit_0": "",
+      "Data_Memory_0": "",
+      "SIEMPRE4_0": ""
+    },
+    "ports": {
+      "CLK": {
+        "direction": "I"
+      },
+      "RST": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Instruction_Memory_0": {
+        "vlnv": "xilinx.com:module_ref:Instruction_Memory:1.0",
+        "xci_name": "RISCV_Uniciclo_Instruction_Memory_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Instruction_Memory_0_1\\RISCV_Uniciclo_Instruction_Memory_0_1.xci",
+        "inst_hier_path": "Instruction_Memory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Instruction_Memory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A_IM": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OPCODE_IM": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "FUNCT3_IM": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "FUNCT7_IM": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "RA_IM": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "RB_IM": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "RW_IM": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "EU_IM": {
+            "direction": "O",
+            "left": "24",
+            "right": "0"
+          }
+        }
+      },
+      "Sumar4_0": {
+        "vlnv": "xilinx.com:module_ref:Sumar4:1.0",
+        "xci_name": "RISCV_Uniciclo_Sumar4_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Sumar4_0_1\\RISCV_Uniciclo_Sumar4_0_1.xci",
+        "inst_hier_path": "Sumar4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sumar4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "PC": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "SAL": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Sumador_0": {
+        "vlnv": "xilinx.com:module_ref:Sumador:1.0",
+        "xci_name": "RISCV_Uniciclo_Sumador_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Sumador_0_1\\RISCV_Uniciclo_Sumador_0_1.xci",
+        "inst_hier_path": "Sumador_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sumador",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "SAL": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Extension_Unit_0": {
+        "vlnv": "xilinx.com:module_ref:Extension_Unit:1.0",
+        "xci_name": "RISCV_Uniciclo_Extension_Unit_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Extension_Unit_0_1\\RISCV_Uniciclo_Extension_Unit_0_1.xci",
+        "inst_hier_path": "Extension_Unit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Extension_Unit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CEU": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Dint": {
+            "direction": "I",
+            "left": "24",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "OR_32bit_0": {
+        "vlnv": "xilinx.com:module_ref:OR_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_OR_32bit_0_0",
+        "xci_path": "ip\\RISCV_Uniciclo_OR_32bit_0_0\\RISCV_Uniciclo_OR_32bit_0_0.xci",
+        "inst_hier_path": "OR_32bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "IN": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O"
+          }
+        }
+      },
+      "NAND_0": {
+        "vlnv": "xilinx.com:module_ref:NAND:1.0",
+        "xci_name": "RISCV_Uniciclo_NAND_0_0",
+        "xci_path": "ip\\RISCV_Uniciclo_NAND_0_0\\RISCV_Uniciclo_NAND_0_0.xci",
+        "inst_hier_path": "NAND_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NAND",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "IN1": {
+            "direction": "I"
+          },
+          "IN2": {
+            "direction": "I"
+          },
+          "OUT": {
+            "direction": "O"
+          }
+        }
+      },
+      "Mux4a1_32bit_0": {
+        "vlnv": "xilinx.com:module_ref:Mux4a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux4a1_32bit_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux4a1_32bit_0_1\\RISCV_Uniciclo_Mux4a1_32bit_0_1.xci",
+        "inst_hier_path": "Mux4a1_32bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux4a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Mux4a1_32bit_1": {
+        "vlnv": "xilinx.com:module_ref:Mux4a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux4a1_32bit_1_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux4a1_32bit_1_1\\RISCV_Uniciclo_Mux4a1_32bit_1_1.xci",
+        "inst_hier_path": "Mux4a1_32bit_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux4a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "PC_Register_0": {
+        "vlnv": "xilinx.com:module_ref:PC_Register:1.0",
+        "xci_name": "RISCV_Uniciclo_PC_Register_0_2",
+        "xci_path": "ip\\RISCV_Uniciclo_PC_Register_0_2\\RISCV_Uniciclo_PC_Register_0_2.xci",
+        "inst_hier_path": "PC_Register_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PC_Register",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Register_File_0": {
+        "vlnv": "xilinx.com:module_ref:Register_File:1.0",
+        "xci_name": "RISCV_Uniciclo_Register_File_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Register_File_0_1\\RISCV_Uniciclo_Register_File_0_1.xci",
+        "inst_hier_path": "Register_File_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Register_File",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "WE_RF": {
+            "direction": "I"
+          },
+          "RA_RF": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "RB_RF": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "RW_RF": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "DW_RF": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "A_RF": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "B_RF": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RES": {
+            "direction": "I"
+          }
+        }
+      },
+      "Mux2a1_32bit_0": {
+        "vlnv": "xilinx.com:module_ref:Mux2a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux2a1_32bit_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux2a1_32bit_0_1\\RISCV_Uniciclo_Mux2a1_32bit_0_1.xci",
+        "inst_hier_path": "Mux2a1_32bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux2a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Mux2a1_32bit_1": {
+        "vlnv": "xilinx.com:module_ref:Mux2a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux2a1_32bit_1_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux2a1_32bit_1_1\\RISCV_Uniciclo_Mux2a1_32bit_1_1.xci",
+        "inst_hier_path": "Mux2a1_32bit_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux2a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Mux2a1_32bit_2": {
+        "vlnv": "xilinx.com:module_ref:Mux2a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux2a1_32bit_2_0",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux2a1_32bit_2_0\\RISCV_Uniciclo_Mux2a1_32bit_2_0.xci",
+        "inst_hier_path": "Mux2a1_32bit_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux2a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Mux2a1_32bit_3": {
+        "vlnv": "xilinx.com:module_ref:Mux2a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux2a1_32bit_3_0",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux2a1_32bit_3_0\\RISCV_Uniciclo_Mux2a1_32bit_3_0.xci",
+        "inst_hier_path": "Mux2a1_32bit_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux2a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Mux2a1_32bit_4": {
+        "vlnv": "xilinx.com:module_ref:Mux2a1_32bit:1.0",
+        "xci_name": "RISCV_Uniciclo_Mux2a1_32bit_4_0",
+        "xci_path": "ip\\RISCV_Uniciclo_Mux2a1_32bit_4_0\\RISCV_Uniciclo_Mux2a1_32bit_4_0.xci",
+        "inst_hier_path": "Mux2a1_32bit_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Mux2a1_32bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SEL": {
+            "direction": "I"
+          },
+          "IN0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IN1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:module_ref:ALU:1.0",
+        "xci_name": "RISCV_Uniciclo_ALU_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_ALU_0_1\\RISCV_Uniciclo_ALU_0_1.xci",
+        "inst_hier_path": "ALU_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "rs1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rs2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sal": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "MSB": {
+            "direction": "O"
+          }
+        }
+      },
+      "Control_Unit_0": {
+        "vlnv": "xilinx.com:module_ref:Control_Unit:1.0",
+        "xci_name": "RISCV_Uniciclo_Control_Unit_0_0",
+        "xci_path": "ip\\RISCV_Uniciclo_Control_Unit_0_0\\RISCV_Uniciclo_Control_Unit_0_0.xci",
+        "inst_hier_path": "Control_Unit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Control_Unit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "OP_CODE": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "FUNCT_3": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "FUNCT_7": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "OS": {
+            "direction": "O"
+          },
+          "CDM": {
+            "direction": "O"
+          },
+          "CALU": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "BS": {
+            "direction": "O"
+          },
+          "ALUS1": {
+            "direction": "O"
+          },
+          "ALUS2": {
+            "direction": "O"
+          },
+          "CRF": {
+            "direction": "O"
+          },
+          "CEU": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "DWS": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "PCS": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "Data_Memory_0": {
+        "vlnv": "xilinx.com:module_ref:Data_Memory:1.0",
+        "xci_name": "RISCV_Uniciclo_Data_Memory_0_1",
+        "xci_path": "ip\\RISCV_Uniciclo_Data_Memory_0_1\\RISCV_Uniciclo_Data_Memory_0_1.xci",
+        "inst_hier_path": "Data_Memory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Data_Memory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RW": {
+            "direction": "I"
+          },
+          "ADDr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Din": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "SIEMPRE4_0": {
+        "vlnv": "xilinx.com:module_ref:SIEMPRE4:1.0",
+        "xci_name": "RISCV_Uniciclo_SIEMPRE4_0_0",
+        "xci_path": "ip\\RISCV_Uniciclo_SIEMPRE4_0_0\\RISCV_Uniciclo_SIEMPRE4_0_0.xci",
+        "inst_hier_path": "SIEMPRE4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SIEMPRE4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SIEMPRE4": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Mux4a1_32bit_0_OUT": {
+        "ports": [
+          "Mux4a1_32bit_0/OUT",
+          "PC_Register_0/D"
+        ]
+      },
+      "PC_Register_0_Q": {
+        "ports": [
+          "PC_Register_0/Q",
+          "Instruction_Memory_0/A_IM",
+          "Sumar4_0/PC",
+          "Sumador_0/B",
+          "Mux2a1_32bit_1/IN0"
+        ]
+      },
+      "Sumar4_0_SAL": {
+        "ports": [
+          "Sumar4_0/SAL",
+          "Mux4a1_32bit_0/IN2",
+          "Mux4a1_32bit_1/IN2"
+        ]
+      },
+      "Instruction_Memory_0_RA_IM": {
+        "ports": [
+          "Instruction_Memory_0/RA_IM",
+          "Register_File_0/RA_RF"
+        ]
+      },
+      "Instruction_Memory_0_RB_IM": {
+        "ports": [
+          "Instruction_Memory_0/RB_IM",
+          "Register_File_0/RB_RF"
+        ]
+      },
+      "Instruction_Memory_0_RW_IM": {
+        "ports": [
+          "Instruction_Memory_0/RW_IM",
+          "Register_File_0/RW_RF"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "Mux2a1_32bit_4/OUT",
+          "Mux4a1_32bit_0/IN1",
+          "Mux4a1_32bit_1/IN1"
+        ]
+      },
+      "Mux4a1_32bit_1_OUT": {
+        "ports": [
+          "Mux4a1_32bit_1/OUT",
+          "Register_File_0/DW_RF"
+        ]
+      },
+      "Sumador_0_SAL": {
+        "ports": [
+          "Sumador_0/SAL",
+          "Mux4a1_32bit_0/IN0"
+        ]
+      },
+      "Instruction_Memory_0_EU_IM": {
+        "ports": [
+          "Instruction_Memory_0/EU_IM",
+          "Extension_Unit_0/Dint"
+        ]
+      },
+      "Extension_Unit_0_Dout": {
+        "ports": [
+          "Extension_Unit_0/Dout",
+          "Mux4a1_32bit_1/IN0",
+          "Mux2a1_32bit_0/IN1",
+          "Mux2a1_32bit_3/IN1"
+        ]
+      },
+      "Register_File_0_A_RF": {
+        "ports": [
+          "Register_File_0/A_RF",
+          "Mux2a1_32bit_1/IN1"
+        ]
+      },
+      "Register_File_0_B_RF": {
+        "ports": [
+          "Register_File_0/B_RF",
+          "Mux2a1_32bit_0/IN0",
+          "Data_Memory_0/Din"
+        ]
+      },
+      "Mux2a1_32bit_0_OUT": {
+        "ports": [
+          "Mux2a1_32bit_0/OUT",
+          "ALU_0/rs2"
+        ]
+      },
+      "Mux2a1_32bit_1_OUT": {
+        "ports": [
+          "Mux2a1_32bit_1/OUT",
+          "ALU_0/rs1"
+        ]
+      },
+      "ALU_0_sal": {
+        "ports": [
+          "ALU_0/sal",
+          "OR_32bit_0/IN",
+          "Mux2a1_32bit_4/IN0",
+          "Data_Memory_0/ADDr"
+        ]
+      },
+      "OR_32bit_0_OUT": {
+        "ports": [
+          "OR_32bit_0/OUT",
+          "NAND_0/IN2",
+          "Mux2a1_32bit_2/IN1"
+        ]
+      },
+      "NAND_0_OUT": {
+        "ports": [
+          "NAND_0/OUT",
+          "Mux2a1_32bit_2/IN0"
+        ]
+      },
+      "Mux2a1_32bit_2_OUT": {
+        "ports": [
+          "Mux2a1_32bit_2/OUT",
+          "Mux2a1_32bit_3/SEL"
+        ]
+      },
+      "Mux2a1_32bit_3_OUT": {
+        "ports": [
+          "Mux2a1_32bit_3/OUT",
+          "Sumador_0/A"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "CLK",
+          "PC_Register_0/CLK",
+          "Register_File_0/CLK",
+          "Data_Memory_0/CLK"
+        ]
+      },
+      "Data_Memory_0_Dout": {
+        "ports": [
+          "Data_Memory_0/Dout",
+          "Mux2a1_32bit_4/IN1"
+        ]
+      },
+      "Instruction_Memory_0_OPCODE_IM": {
+        "ports": [
+          "Instruction_Memory_0/OPCODE_IM",
+          "Control_Unit_0/OP_CODE"
+        ]
+      },
+      "Instruction_Memory_0_FUNCT3_IM": {
+        "ports": [
+          "Instruction_Memory_0/FUNCT3_IM",
+          "Control_Unit_0/FUNCT_3"
+        ]
+      },
+      "Instruction_Memory_0_FUNCT7_IM": {
+        "ports": [
+          "Instruction_Memory_0/FUNCT7_IM",
+          "Control_Unit_0/FUNCT_7"
+        ]
+      },
+      "Control_Unit_0_CRF": {
+        "ports": [
+          "Control_Unit_0/CRF",
+          "Register_File_0/WE_RF"
+        ]
+      },
+      "Control_Unit_0_CEU": {
+        "ports": [
+          "Control_Unit_0/CEU",
+          "Extension_Unit_0/CEU"
+        ]
+      },
+      "Control_Unit_0_CALU": {
+        "ports": [
+          "Control_Unit_0/CALU",
+          "ALU_0/sel"
+        ]
+      },
+      "Control_Unit_0_CDM": {
+        "ports": [
+          "Control_Unit_0/CDM",
+          "Data_Memory_0/RW"
+        ]
+      },
+      "Control_Unit_0_PCS": {
+        "ports": [
+          "Control_Unit_0/PCS",
+          "Mux4a1_32bit_0/SEL"
+        ]
+      },
+      "Control_Unit_0_DWS": {
+        "ports": [
+          "Control_Unit_0/DWS",
+          "Mux4a1_32bit_1/SEL"
+        ]
+      },
+      "Control_Unit_0_ALUS1": {
+        "ports": [
+          "Control_Unit_0/ALUS1",
+          "Mux2a1_32bit_1/SEL"
+        ]
+      },
+      "Control_Unit_0_ALUS2": {
+        "ports": [
+          "Control_Unit_0/ALUS2",
+          "Mux2a1_32bit_0/SEL"
+        ]
+      },
+      "Control_Unit_0_OS": {
+        "ports": [
+          "Control_Unit_0/OS",
+          "Mux2a1_32bit_4/SEL"
+        ]
+      },
+      "Control_Unit_0_BS": {
+        "ports": [
+          "Control_Unit_0/BS",
+          "Mux2a1_32bit_2/SEL"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "RST",
+          "PC_Register_0/RST",
+          "Register_File_0/RES",
+          "Control_Unit_0/RST"
+        ]
+      },
+      "ALU_0_MSB": {
+        "ports": [
+          "ALU_0/MSB",
+          "NAND_0/IN1"
+        ]
+      },
+      "SIEMPRE4_0_SIEMPRE4": {
+        "ports": [
+          "SIEMPRE4_0/SIEMPRE4",
+          "Mux2a1_32bit_3/IN0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Tue Jun  8 21:36:52 2021
+# Process ID: 20776
+# Current directory: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1
+# Command line: vivado.exe -log RISCV_Uniciclo_Mux4a1_32bit_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_Uniciclo_Mux4a1_32bit_0_1.tcl
+# Log file: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1/RISCV_Uniciclo_Mux4a1_32bit_0_1.vds
+# Journal file: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Mux4a1_32bit_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source RISCV_Uniciclo_Mux4a1_32bit_0_1.tcl -notrace

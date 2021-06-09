@@ -22,8 +22,8 @@
 
 module ALU(
     /* Se definen las entradas y salidas del modulo*/
-    input [31:0] rs1, rs2,
     input [2:0] sel,
+    input [31:0] rs1, rs2,
     output reg [31:0] sal,
     output reg MSB
     );

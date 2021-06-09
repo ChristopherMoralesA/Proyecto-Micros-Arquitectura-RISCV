@@ -1,0 +1,27 @@
+
+*** Running vivado
+    with args -log RISCV_Uniciclo_Instruction_Memory_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_Uniciclo_Instruction_Memory_0_1.tcl
+
+
+
+****** Vivado v2020.3 (64-bit)
+  **** SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+  **** IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source RISCV_Uniciclo_Instruction_Memory_0_1.tcl -notrace
+INFO: [IP_Flow 19-6925] IPCACHE: Skipping cache check for IP RISCV_Uniciclo_Instruction_Memory_0_1: IP Cache does not support module reference IP
+Command: synth_design -top RISCV_Uniciclo_Instruction_Memory_0_1 -part xcvc1802-viva1596-1LHP-i-L -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'RISCV_Uniciclo_Instruction_Memory_0_1' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1802'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1802'
+INFO: [Common 17-86] Your Synthesis license expires in 8 day(s)
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Instruction_Memory_0_1_synth_1/C:/Users/chris_qwzwysn/Proyecto Micros Arquitectura RISCV/Proyecto-Micros-Arquitectura-RISCV/Proyecto Micros Arquitectura RISCV.runs/RISCV_Uniciclo_Instruction_Memory_0_1_synth_1/.Xil/Vivado-3080-DESKTOP-NELKSFF/realtime\RISCV_Uniciclo_Instruction_Memory_0_1.tcl
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 23:52:44 2021...
