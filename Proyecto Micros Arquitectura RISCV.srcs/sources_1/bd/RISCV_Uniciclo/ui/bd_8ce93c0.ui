@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.349306",
-   "Default View_TopLeft":"-959,-455",
+   "Default View_TopLeft":"-953,-455",
    "Display-PortTypeOthers":"true",
    "ExpandedHierarchyInLayout":"",
    "Interfaces View_ScaleFactor":"1.0",
@@ -16,7 +16,6 @@ preplace inst Sumar4_0 -pg 1 -lvl 2 -x -240 -y 670 -defaultsOSRD -orient R180
 preplace inst Sumador_0 -pg 1 -lvl 2 -x -240 -y 900 -defaultsOSRD -orient R180
 preplace inst Extension_Unit_0 -pg 1 -lvl 5 -x 860 -y 670 -defaultsOSRD
 preplace inst OR_32bit_0 -pg 1 -lvl 7 -x 1490 -y 790 -defaultsOSRD -orient R180
-preplace inst NAND_0 -pg 1 -lvl 7 -x 1490 -y 930 -defaultsOSRD -orient R180
 preplace inst Mux4a1_32bit_0 -pg 1 -lvl 1 -x -610 -y 310 -defaultsOSRD -resize 174 266
 preplace inst Mux4a1_32bit_1 -pg 1 -lvl 4 -x 480 -y 570 -defaultsOSRD
 preplace inst PC_Register_0 -pg 1 -lvl 2 -x -240 -y 360 -defaultsOSRD -resize 222 194
@@ -26,10 +25,11 @@ preplace inst Mux2a1_32bit_1 -pg 1 -lvl 6 -x 1200 -y 250 -defaultsOSRD
 preplace inst Mux2a1_32bit_2 -pg 1 -lvl 6 -x 1200 -y 930 -defaultsOSRD -orient R180
 preplace inst Mux2a1_32bit_3 -pg 1 -lvl 5 -x 860 -y 910 -defaultsOSRD -orient R180
 preplace inst Mux2a1_32bit_4 -pg 1 -lvl 9 -x 2210 -y 240 -defaultsOSRD
-preplace inst ALU_0 -pg 1 -lvl 7 -x 1490 -y 310 -defaultsOSRD -resize 210 410
-preplace inst Data_Memory_0 -pg 1 -lvl 8 -x 1830 -y 260 -defaultsOSRD -resize 254 466
 preplace inst SIEMPRE4_0 -pg 1 -lvl 6 -x 1200 -y 800 -defaultsOSRD -orient R180 -resize 83 88
 preplace inst Control_Unit_0 -pg 1 -lvl 5 -x 860 -y -250 -defaultsOSRD -orient R270
+preplace inst NAND_0 -pg 1 -lvl 7 -x 1490 -y 930 -defaultsOSRD -orient R180
+preplace inst Data_Memory_0 -pg 1 -lvl 8 -x 1830 -y 260 -defaultsOSRD -resize 254 466
+preplace inst ALU_0 -pg 1 -lvl 7 -x 1490 -y 310 -defaultsOSRD -resize 210 410
 preplace netloc Mux4a1_32bit_0_OUT 1 1 1 N 310
 preplace netloc PC_Register_0_Q 1 2 4 -100 160 NJ 160 N 160 1020J
 preplace netloc Sumar4_0_SAL 1 0 4 -750 470 -500 590 N 590 N

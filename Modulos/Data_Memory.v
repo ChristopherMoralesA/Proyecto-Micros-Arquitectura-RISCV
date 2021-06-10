@@ -27,7 +27,7 @@ module Data_Memory(RW, ADDr, Din, CLK, Dout
     output reg [31:0] Dout;
     
     
-    reg [31:0] memory_array[2000:0];
+    reg [31:0] memory_array[100:0];
     reg [31:0] d_out;  
         always @(posedge CLK)
         begin 

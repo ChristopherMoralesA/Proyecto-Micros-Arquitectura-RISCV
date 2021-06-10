@@ -38,9 +38,9 @@ module ALU(
                 2:
                     sal = rs1 ^ rs2;
                 3:
-                    sal = rs1 << rs2;
+                    sal = rs1 << rs2[4:0];
                 4:
-                    sal = rs1 >>> rs2;
+                    sal = rs1 >>> rs2[4:0];
                 5: 
                     sal = rs1 - rs2;
                 6:
